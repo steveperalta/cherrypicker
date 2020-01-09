@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1578582429653
+Build-Jdk: 1.8.0_201-1-redhat
+Built-By: TRSIZ6
+Bundle-Description: Allows customers to easily access the Okta API. Buil
+ t with Okta Swagger specification available here: https://github.com/ok
+ ta/okta-sdk-java/blob/master/src/swagger/api.yaml.
+Bundle-ManifestVersion: 2
+Bundle-Name: Okta Swagger Specification
+Bundle-SymbolicName: okta-swagger-spec
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.okta.client.api;uses:="com.oktaapi.model";version="1
+ .0.0",com.okta.client.service;uses:="com.okta.client.api";version="1.0.
+ 0",com.oktaapi.model;uses:="com.fasterxml.jackson.annotation,javax.xml.
+ bind.annotation";version="1.0.0",com.oktaapi.okta.client.api;uses:="com
+ .oktaapi.model,io.swagger.annotations,javax.ws.rs";version="1.0.0"
+Import-Package: com.fasterxml.jackson.annotation;version="[2.8,3)",com.f
+ asterxml.jackson.databind;version="[2.8,3)",com.fasterxml.jackson.jaxrs
+ .json;version="[2.8,3)",com.okta.client.api,com.okta.client.service,com
+ .oktaapi.model,com.oktaapi.okta.client.api,io.swagger.annotations;versi
+ on="[1.5,2)",javax.ws.rs;version="[2.0,3)",javax.xml.bind.annotation,or
+ g.apache.cxf.jaxrs.client;version="[3.1,4)"
+Provide-Capability: osgi.service;objectClass:List<String>="com.okta.clie
+ nt.service.OktaService"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.okta.client.service.impl.OktaServiceImpl
+ .xml
+Tool: Bnd-3.3.0.201609221906
