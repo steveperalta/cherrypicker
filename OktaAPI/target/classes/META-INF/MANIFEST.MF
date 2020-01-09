@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1578578002826
+Bnd-LastModified: 1578580922055
 Build-Jdk: 1.8.0_201-1-redhat
 Built-By: TRSIZ6
 Bundle-Description: Allows customers to easily access the Okta API. Buil
@@ -10,23 +10,14 @@ Bundle-Name: Okta Swagger Specification
 Bundle-SymbolicName: okta-swagger-spec
 Bundle-Version: 1.0.0
 Created-By: Apache Maven Bundle Plugin
-Export-Package: gov.texas.esb.cxf.okta.client.api;uses:="gov.texas.trs.e
- sb.okta.model";version="1.0.0",gov.texas.esb.cxf.okta.client.service;us
- es:="gov.texas.esb.cxf.okta.client.api";version="1.0.0",gov.texas.trs.e
- sb.okta.model;uses:="com.fasterxml.jackson.annotation,javax.xml.bind.an
- notation";version="1.0.0",gov.texas.trs.okta.client.api;uses:="gov.texa
- s.trs.esb.okta.model,io.swagger.annotations,javax.ws.rs";version="1.0.0
- "
-Import-Package: com.fasterxml.jackson.annotation;version="[2.8,3)",com.f
- asterxml.jackson.databind;version="[2.8,3)",com.fasterxml.jackson.jaxrs
- .json;version="[2.8,3)",gov.texas.esb.cxf.okta.client.api,gov.texas.esb
- .cxf.okta.client.service,gov.texas.trs.esb.okta.model,gov.texas.trs.okt
- a.client.api,io.swagger.annotations;version="[1.5,2)",javax.ws.rs;versi
- on="[2.0,3)",javax.xml.bind.annotation,org.apache.cxf.jaxrs.client;vers
- ion="[3.1,4)"
-Provide-Capability: osgi.service;objectClass:List<String>="gov.texas.esb
- .cxf.okta.client.service.OktaService"
+Export-Package: com.okta.client.api;version="1.0.0",com.okta.client.serv
+ ice;version="1.0.0",com.oktaapi.model;uses:="com.fasterxml.jackson.anno
+ tation,javax.xml.bind.annotation";version="1.0.0",com.oktaapi.okta.clie
+ nt.api;uses:="io.swagger.annotations,javax.ws.rs";version="1.0.0"
+Import-Package: com.fasterxml.jackson.annotation;version="[2.8,3)",io.sw
+ agger.annotations;version="[1.5,2)",javax.ws.rs;version="[2.0,3)",javax
+ .xml.bind.annotation
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
-Service-Component: OSGI-INF/gov.texas.esb.cxf.okta.client.service.impl.O
- ktaServiceImpl.xml
+Service-Component: OSGI-INF/com.okta.client.service.impl.OktaServiceImpl
+ .xml
 Tool: Bnd-3.3.0.201609221906
