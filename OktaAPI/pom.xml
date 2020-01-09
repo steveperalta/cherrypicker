@@ -2,12 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>gov.texas.trs.esb.services</groupId>
+		<groupId>com.okta.my.services</groupId>
 		<artifactId>parent</artifactId>
 		<version>1.0.1-SNAPSHOT</version>
 	</parent>
 
-	<groupId>gov.texas.trs.cxf.client</groupId>
+	<groupId>com.okta.my.client</groupId>
 	<artifactId>okta-swagger-spec</artifactId>
 	<packaging>bundle</packaging>
 	<name>Okta Swagger Specification</name>
