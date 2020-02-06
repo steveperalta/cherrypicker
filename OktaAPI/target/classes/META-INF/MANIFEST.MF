@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1578582429653
+Bnd-LastModified: 1581023557456
 Build-Jdk: 1.8.0_201-1-redhat
 Built-By: TRSIZ6
 Bundle-Description: Allows customers to easily access the Okta API. Buil

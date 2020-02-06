@@ -5,6 +5,7 @@
 		<groupId>com.okta.my.services</groupId>
 		<artifactId>parent</artifactId>
 		<version>1.0.1-SNAPSHOT</version>
+		<relativePath>./parent</relativePath>
 	</parent>
 
 	<groupId>com.okta.my.client</groupId>
